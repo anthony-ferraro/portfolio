@@ -1,13 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
-import {GiHamburgerMenu} from 'react-icons/gi'
+import { GiHamburgerMenu } from 'react-icons/gi'
 const Header = ({ router }) => {
     const [showDropdown, setShowDropdown] = React.useState(false);
     return (
         <>
             <div className="header">
                 <div className="logo">
-                    AF
+                    <Link href="/">AF</Link>
                 </div>
                 <div className="hamburger" onClick={() => setShowDropdown(!showDropdown)}>
                     <GiHamburgerMenu></GiHamburgerMenu>

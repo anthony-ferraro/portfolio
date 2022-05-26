@@ -6,7 +6,9 @@ const Footer = () => {
         <>
             <div className="footer">
                 <div className="left">
-                    <div className="logo">AF</div>
+                    <div className="logo">
+                        <Link href="/">AF</Link>
+                    </div>
                     <div className="links">
                         <Link href="/">Home</Link>
                         <Link href="/portfolio">Portfolio</Link>

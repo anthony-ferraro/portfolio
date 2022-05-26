@@ -14,12 +14,12 @@ function MyApp({ Component, pageProps }) {
       <title>Anthony</title>
     </Head>
     <div className="main">
+      <Header router={router}></Header>
       <div className="container">
-        <Header router={router}></Header>
         <Component {...pageProps} router={router} />
         {router.pathname !== "/contact" &&
           <div className="call-to-action">
-            <h3>Interested in doing a project together?</h3>
+            <h1>Interested in doing a project together?</h1>
             <Link href="/contact">
               <button className="button-secondary">Contact Me</button>
             </Link>

@@ -1,6 +1,11 @@
 import React from 'react'
 import { BsGithub, BsLinkedin } from 'react-icons/bs'
-const contact = () => {
+import { useForm, ValidationError } from '@formspree/react';
+const Contact = () => {
+  const [state, handleSubmit] = useForm("mjvllwne");
+  // if (state.succeeded) {
+  //   return <p>Thanks for joining!</p>;
+  // }
   return (
     <>
       <div className="contact-section">
@@ -26,21 +31,24 @@ const contact = () => {
       </div>
       <div className="contact-section">
         <h2>Contact Me</h2>
-        {/* formspree.io */}
-        <div className="form">
+        <form className="form" onSubmit={handleSubmit}>
           <h5>Name</h5>
-          <input type="text" placeholder="Jane Smith"></input>
+          <input type="text" id="name" name="name" placeholder="Jane Smith"></input>
 
           <h5>Email Address</h5>
-          <input type="text" placeholder="email@example.com"></input>
-
+          <input type="text" id="email" name="email" placeholder="email@example.com"></input>
+          <ValidationError
+            prefix="Email"
+            field="email"
+            errors={state.errors}
+          />
           <h5>Message</h5>
-          <textarea placeholder="How can I help?"></textarea>
-          <button className="button-primary">Send Message</button>
-        </div>
+          <textarea placeholder="How can I help?" id="message" name="message"></textarea>
+          <button className="button-primary" type="submit" disabled={state.submitting}>Send Message</button>
+        </form>
       </div>
     </>
   )
 }
 
-export default contact
+export default Contact
