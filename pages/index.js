@@ -29,9 +29,14 @@ export default function Home() {
             I love being out in nature whether that&apos;s going for a walk or relaxing on the beach.
             I&apos;d love for you to check out my work.
           </p>
-          <Link href="/portfolio">
-            <button className="button-secondary">Go To Portfolio</button>
-          </Link>
+          <div className="resumeWrapper">
+            <Link href="/portfolio">
+              <button className="button-secondary">Go To Portfolio</button>
+            </Link>
+            <Link href="https://docs.google.com/document/d/1vUpgYV-IjkEyTthNJpJLbUy8ZR_HxaEuLUpXlCTRKBg/edit?usp=sharing">
+              <button className="button-secondary">View My Resume</button>
+            </Link>
+          </div>
         </div>
       </div>
     </>
