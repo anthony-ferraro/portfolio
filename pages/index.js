@@ -21,19 +21,19 @@ export default function Home() {
         <div className="about-info" ref={aboutInfo}>
           <h2>About Me</h2>
           <p className="body-1">
-            I&apos;m a junior front-end developer looking for a new role in an exciting company.
-            I focus on creating scalable, user-friendly web applications with modern HTML, CSS, and Javascript.
-            I mostly work in React and Next.js, but I can adapt to whatever tools are needed.
-            I&apos;m most happy working remotely and have experience in remote teams, but I can also work onsite.
-            When I&apos;m not coding, you&apos;ll find me in a coffee shop, reading, or outdoors.
-            I love being out in nature whether that&apos;s going for a walk or relaxing on the beach.
-            I&apos;d love for you to check out my work.
+            I&apos;m a Full Stack Software Engineer II at Vazkor with 5 years of experience in software development.
+            I specialize in creating scalable, user-friendly web applications using .NET/C#, React, and TypeScript.
+            My expertise extends to Azure, microservices, and payment solutions, with a strong background in fintech and cloud computing.
+            I have extensive experience working in agile environments and am passionate about delivering high-quality software solutions.
+            Previously, I worked as a Software Development Engineer I at DEKA, where I honed my skills in innovative product development.
+            When I&apos;m not coding, you can find me exploring the latest tech trends, contributing to open-source projects, or enjoying the great outdoors.
+            I&apos;m always excited to take on new challenges and collaborate on interesting projects.
           </p>
           <div className="resumeWrapper">
             <Link href="/portfolio">
               <button className="button-secondary">Go To Portfolio</button>
             </Link>
-            <Link href="https://docs.google.com/document/d/1vUpgYV-IjkEyTthNJpJLbUy8ZR_HxaEuLUpXlCTRKBg/edit?usp=sharing">
+            <Link href="/assets/Anthony_ferraro_resume_sharable.pdf">
               <button className="button-secondary">View My Resume</button>
             </Link>
           </div>
